@@ -11,7 +11,7 @@ class Voting(BaseModel):
     options: list[VotingOptions]
 
     @validator("options", pre=True)
-    def set_options_id(cls, v):  # задает id 
+    def set_options_id(cls, v):  # задает id
         for i in range(len(v)):
             v[i]["id"] = i+1
         return v
