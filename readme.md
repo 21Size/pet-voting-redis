@@ -55,6 +55,6 @@ Return: {
 GET http://localhost:8080/api/voting/{voting_id}
 Accept: application/json
 
-Return: None
+Return: null
 ```
 
