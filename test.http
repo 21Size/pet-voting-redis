@@ -1,0 +1,24 @@
+### Создание голосования
+
+POST http://localhost:8080/api/voting/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "test",
+  "options": [
+    {"name": "o1"},
+    {"name": "o2"},
+    {"name": "o3"}
+  ]
+}
+
+### Получение голосвания
+
+GET http://localhost:8080/api/voting/6768139b-5b87-4e8e-8b42-28ee529e92c1
+Accept: application/json
+
+### Голос
+
+POST http://localhost:8080/api/voting/6768139b-5b87-4e8e-8b42-28ee529e92c1/1
+Accept: application/json
